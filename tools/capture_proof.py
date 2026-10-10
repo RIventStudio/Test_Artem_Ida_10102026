@@ -8,8 +8,11 @@ def capture_proof(html_path, output_path, width=1280, height=850, step_title="ST
     os.makedirs(os.path.dirname(abs_out), exist_ok=True)
     temp_raw = abs_out + ".raw.png"
     
-    abs_html = os.path.abspath(html_path)
-    file_url = "file:///" + abs_html.replace(os.sep, "/")
+    if html_path.startswith("http://") or html_path.startswith("https://"):
+        file_url = html_path
+    else:
+        abs_html = os.path.abspath(html_path)
+        file_url = "file:///" + abs_html.replace(os.sep, "/")
     
     # Запуск Chrome через powershell Start-Process с -Wait для гарантированного сохранения файла
     ps_cmd = f"Start-Process -FilePath 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' -ArgumentList '--headless', '--disable-gpu', '--window-size={width},{height}', '--screenshot=\"{temp_raw}\"', '\"{file_url}\"' -Wait"
