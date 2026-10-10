@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOLEN PEACE — Психологический триллер | RIventStudio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта (навигация) -->
+    <header class="site-header">
+        <div class="header-inner container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-accent">STOLEN</span> PEACE
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">Об игре</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Особенности</a></li>
+                    <li class="nav-item"><a href="#status" class="nav-link">Разработка</a></li>
+                    <li class="nav-item"><a href="#subscribe" class="nav-link">Новости</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#subscribe" class="btn btn-header">Подписаться</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="main-content">
+
+        <!-- Hero-секция (Главный экран) -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container container">
+                <div class="hero-badge">Инди-проект на Unity &bull; RIventStudio</div>
+                <h1 class="hero-title">ТИШИНА МОЖЕТ БЫТЬ <span class="highlight-text">ОБМАНЧИВОЙ</span></h1>
+                <p class="hero-description">
+                    <strong>STOLEN PEACE</strong> — атмосферный психологический триллер от первого лица. 
+                    Исследуйте винтажные интерьеры загородного особняка, разгадайте тайну исчезновения 
+                    и сохраните рассудок там, где каждый шорох таит угрозу.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#subscribe" class="btn btn-primary">Получить новости</a>
+                    <a href="https://github.com/RIventStudio/STOLEN-PEACE" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Репозиторий на GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Сюжет и атмосфера -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">О ПРОЕКТЕ</h2>
+                    <p class="section-subtitle">Погружение в густую атмосферу кинематографичного саспенса</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text-block">
+                        <h3 class="about-heading">Утраченный покой в тихих стенах</h3>
+                        <p class="about-paragraph">
+                            Вы оказываетесь в заброшенном загородном доме, хранящем следы недавнего присутствия хозяев. 
+                            Каждая комната, наполненная винтажной мебелью, старыми книгами и приглушенным светом ламп, 
+                            раскрывает фрагменты запутанной истории.
+                        </p>
+                        <p class="about-paragraph">
+                            В игре реализована авторская система взаимодействия с предметами окружения, 
+                            создающая эффект полного присутствия и физического контакта с миром.
+                        </p>
+                        <ul class="about-highlights">
+                            <li>Вид от первого лица с реалистичной кинематикой движения</li>
+                            <li>Детализированное PBR-освещение и физика материалов</li>
+                            <li>Глубокий психологический сюжет без дешёвых скримеров</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual-card">
+                        <div class="visual-badge">RIventStudio Original</div>
+                        <div class="visual-content">
+                            <span class="visual-tag">GENRE</span>
+                            <h4 class="visual-title">First-Person Psychological Horror</h4>
+                            <p class="visual-meta">Разработчик: Неменущий Артём &bull; Платформа: PC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Особенности геймплея (CSS Grid) -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">КЛЮЧЕВЫЕ МЕХАНИКИ</h2>
+                    <p class="section-subtitle">Что делает игровой процесс уникальным и напряженным</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128065;</div>
+                        <h3 class="feature-title">Живое окружение</h3>
+                        <p class="feature-text">
+                            Взаимодействие с сотнями интерактивных объектов: дверями, шкатулками, лампами и записками.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#9881;</div>
+                        <h3 class="feature-title">Система взаимодействия</h3>
+                        <p class="feature-text">
+                            Чистая модульная C#-архитектура механик взаимодействия и отслеживания состояний игрового мира.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128373;</div>
+                        <h3 class="feature-title">Густая атмосфера</h3>
+                        <p class="feature-text">
+                            Динамическая работа света и теней, скрип половиц и нарастающее ощущение чужого присутствия.
+                        </p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">&#128214;</div>
+                        <h3 class="feature-title">Нелинейный нарратив</h3>
+                        <p class="feature-text">
+                            Повествование через детали обстановки и окружение (Environmental Storytelling).
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Информационная плашка статуса (Aside) -->
+        <aside class="status-section" id="status">
+            <div class="container">
+                <div class="status-banner">
+                    <div class="status-info">
+                        <span class="status-indicator"></span>
+                        <div class="status-text">
+                            <strong>Текущий статус:</strong> Активная разработка альфа-версии (Unity 6 / C#)
+                        </div>
+                    </div>
+                    <div class="status-action">
+                        <a href="https://github.com/RIventStudio/STOLEN-PEACE" target="_blank" rel="noopener noreferrer" class="status-link">
+                            Следить на GitHub &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Секция: Форма подписки на новости -->
+        <section class="subscribe-section" id="subscribe">
+            <div class="container">
+                <div class="subscribe-wrapper">
+                    <div class="subscribe-header">
+                        <h2 class="section-title">ПОДПИСКА НА НОВОСТИ</h2>
+                        <p class="subscribe-desc">
+                            Оставьте контакты, чтобы первыми получать дневники разработки, 
+                            тизеры геймплея и приглашение на закрытый бета-тест игры STOLEN PEACE.
+                        </p>
+                    </div>
+
+                    <form class="subscribe-form" action="#" method="get" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userName" class="form-label">Ваше имя</label>
+                                <input type="text" id="userName" name="userName" class="form-input" placeholder="Например, Артём" required minlength="2">
+                                <span class="input-hint">Минимум 2 символа</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userEmail" class="form-label">Электронная почта</label>
+                                <input type="email" id="userEmail" name="userEmail" class="form-input" placeholder="player@example.com" required>
+                                <span class="input-hint">Укажите действующий email</span>
+                            </div>
+                        </div>
+
+                        <div class="form-consent">
+                            <label class="consent-label">
+                                <input type="checkbox" name="consent" class="consent-checkbox" required checked>
+                                <span class="consent-text">Я согласен получать новости о разработке игры STOLEN PEACE</span>
+                            </label>
+                        </div>
+
+                        <div class="form-submit-block">
+                            <button type="submit" class="btn btn-submit">Подписаться на рассылку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="logo-accent">STOLEN</span> PEACE
+                </div>
+                <p class="footer-tagline">
+                    Авторский инди-проект в жанре психологического триллера.
+                </p>
+                <div class="footer-student-badge">
+                    Студент: <strong>Неменущий Артём Витальевич</strong><br>
+                    ИСП курс 2, семестр 4 &bull; Пересдача 1
+                </div>
+            </div>
+
+            <div class="footer-col nav-col">
+                <h4 class="footer-heading">Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Главный экран</a></li>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#features">Механики игры</a></li>
+                    <li><a href="#subscribe">Подписка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col repo-col">
+                <h4 class="footer-heading">Репозитории</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://github.com/RIventStudio/STOLEN-PEACE" target="_blank" rel="noopener noreferrer">
+                            GitHub: STOLEN-PEACE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RIventStudio/Test_Artem_Ida_10102026" target="_blank" rel="noopener noreferrer">
+                            GitHub: Test_Artem_Ida_10102026
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container bottom-inner">
+                <p>&copy; 2026 RIventStudio. Все права защищены.</p>
+                <p>Учебный проект по дисциплине &laquo;Веб-верстка HTML/CSS. Frontend-разработка&raquo;</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
