@@ -4,8 +4,7 @@
 **Группа / Курс:** ИСП курс 2 семестр 4  
 **Дисциплина:** Веб-верстка HTML/CSS. frontend-разработка (Пересдача 1)  
 **Репозиторий проекта игры:** [STOLEN PEACE (Unity)](https://github.com/RIventStudio/STOLEN-PEACE)  
-**GitHub Pages:** *(будет опубликовано)*
-
+**GitHub Pages (Ответ на задание):** [https://riventstudio.github.io/Test_Artem_Ida_10102026/](https://riventstudio.github.io/Test_Artem_Ida_10102026/)  
 ---
 
 ## Текст задания
