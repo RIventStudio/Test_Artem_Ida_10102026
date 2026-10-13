@@ -1,0 +1,53 @@
+{
+  "schema": "BPR40_SIDECAR_PASSPORT/1.1",
+  "module_id": "generate_final_report_pdf",
+  "name": "Generate Final Report Pdf",
+  "version": "1.0.0",
+  "standard": "SENIOR_ARCHITECTURE_STANDARD_V6.0",
+  "layer": "tools",
+  "description": "Генератор итогового подробного PDF-отчета (пояснительной записки) по проекту СУБД 'LogiFlow DB'.",
+  "author": "CONTROL_TOWER_DEVELOPER",
+  "inputs": {},
+  "outputs": {},
+  "invariants": [
+    "SIDECAR_CANON_ENFORCED",
+    "IN_CODE_ONLY_VERSION",
+    "FAIL_CLOSED"
+  ],
+  "functions": {
+    "get_img_uri": {
+      "fn_id": "generate_final_report_pdf.get_img_uri",
+      "description": "Функция get_img_uri",
+      "args": [
+        "name"
+      ],
+      "inputs": {
+        "name": {
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      },
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    },
+    "generate_pdf_report": {
+      "fn_id": "generate_final_report_pdf.generate_pdf_report",
+      "description": "Функция generate_pdf_report",
+      "args": [],
+      "inputs": {},
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    }
+  }
+}

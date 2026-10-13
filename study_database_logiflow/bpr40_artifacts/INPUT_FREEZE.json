@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "frozen_at": "2026-10-10T20:18:10+03:00",
+  "task_prompt_hash": "bpr40-sql-excel-4955-full-db-project",
+  "input_requirements": {
+    "tables_min": 5,
+    "indexes_min": 2,
+    "partitioning": true,
+    "users_roles_grants": true,
+    "encryption": true,
+    "logging": true,
+    "backup_restore": true,
+    "isolation_levels": true,
+    "trigger_validation_error": true,
+    "trigger_action_logging": true,
+    "stored_procedure_parameters": true,
+    "excel_password": "4955",
+    "presentation_format": "pdf",
+    "screenshots_proofs": true
+  },
+  "database_domain": {
+    "name": "Smart Logistics & Supply Chain Management System (LogiFlow DB)",
+    "table_entities": [
+      "customers (клиенты, ПДн, шифрованные телефоны и паспорта с ключом 4955)",
+      "warehouses (склады и региональные распределительные центры)",
+      "products (каталог товаров, остатки, категории, цены)",
+      "orders (партиционированная таблица заказов по датам order_date)",
+      "order_items (позиции заказов со связями FK и валидацией остатков)",
+      "system_audit_logs (аудит-логгинг изменений данных с метаинформацией о сессии)"
+    ]
+  }
+}

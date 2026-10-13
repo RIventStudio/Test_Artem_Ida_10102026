@@ -1,0 +1,32 @@
+{
+  "schema": "BPR40_SIDECAR_PASSPORT/1.1",
+  "module_id": "create_excel_model",
+  "name": "Create Excel Model",
+  "version": "1.0.0",
+  "standard": "SENIOR_ARCHITECTURE_STANDARD_V6.0",
+  "layer": "tools",
+  "description": "Генератор корпоративной книги Excel для проекта БД 'LogiFlow DB' (BPR40 Auto).",
+  "author": "CONTROL_TOWER_DEVELOPER",
+  "inputs": {},
+  "outputs": {},
+  "invariants": [
+    "SIDECAR_CANON_ENFORCED",
+    "IN_CODE_ONLY_VERSION",
+    "FAIL_CLOSED"
+  ],
+  "functions": {
+    "build_excel": {
+      "fn_id": "create_excel_model.build_excel",
+      "description": "Функция build_excel",
+      "args": [],
+      "inputs": {},
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    }
+  }
+}

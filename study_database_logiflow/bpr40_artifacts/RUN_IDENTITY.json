@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "protocol": "BPR40 v4.0.1 (Dynamic Auto-Assignment, Auto Mode)",
+  "run_id": "BPR40-RUN-20261010-SQL-EXCEL-DB-PROJECT",
+  "task_kind": "ENTERPRISE_DATABASE_PROJECT_AND_EVIDENCE_DELIVERY",
+  "execution_mode": "AUTO_AUTONOMOUS",
+  "timestamp": "2026-10-10T20:18:00+03:00",
+  "operator": "ANTIGRAVITY_AGENT_DEEPMIND",
+  "user_credentials": {
+    "excel_password": "4955",
+    "encryption_passphrase": "4955"
+  },
+  "phases": [
+    "PHASE_1_CALIBRATE",
+    "PHASE_2_BUILD_SQL_AND_DATA_ENGINE",
+    "PHASE_3_PROBE_EVIDENCE_SCREENSHOTS",
+    "PHASE_4_PREMORTEM_AND_QUALITY_ASSURANCE",
+    "PHASE_5_REVIEW_AND_SEAL"
+  ],
+  "requirements_checklist": [
+    {"req_id": "REQ-01", "name": "Минимум 5 связанных таблиц", "target": "6 нормализованных таблиц логистического хаба"},
+    {"req_id": "REQ-02", "name": "Индексы (не менее двух)", "target": "Составной B-Tree индекс и Partial индекс с EXPLAIN ANALYZE"},
+    {"req_id": "REQ-03", "name": "Партиционирование таблицы", "target": "Range Partitioning таблицы orders по диапазонам дат + Partition Pruning"},
+    {"req_id": "REQ-04", "name": "Пользователи, роли и права", "target": "RBAC роли (admin, manager, auditor, operator), пользователи, GRANT/REVOKE"},
+    {"req_id": "REQ-05", "name": "Шифрование данных", "target": "pgcrypto AES-256 симметричное шифрование ПДн с паролем 4955 + хеширование"},
+    {"req_id": "REQ-06", "name": "Логирование операций", "target": "Централизованная таблица аудита system_audit_logs с записью сессий"},
+    {"req_id": "REQ-07", "name": "Резервное копирование и восстановление", "target": "Скрипты полного и дифференциального бэкапа, WAL архивация, PITR"},
+    {"req_id": "REQ-08", "name": "Уровни изоляции транзакций", "target": "Анализ и демонстрация Read Committed, Repeatable Read, Serializable"},
+    {"req_id": "REQ-09", "name": "Триггер валидации с ошибкой", "target": "trg_validate_order_item_stock (выброс исключения при нарушении остатка/цены)"},
+    {"req_id": "REQ-10", "name": "Триггер логирования действий", "target": "trg_audit_orders_change (автоматическая фиксация JSON DML изменений)"},
+    {"req_id": "REQ-11", "name": "Хранимая процедура с параметрами", "target": "sp_process_order_checkout (транзакционное оформление заказа с IN/OUT)"},
+    {"req_id": "REQ-12", "name": "Excel книга с защитой", "target": "Файл .xlsx со структурой, словарем данных, логами и защитой паролем 4955"},
+    {"req_id": "REQ-13", "name": "Презентация в формате PDF", "target": "Современная презентация PDF 14 слайдов с встроенными пруф-скриншотами"},
+    {"req_id": "REQ-14", "name": "Пруфы скриншоты", "target": "10 реалистичных скриншотов выполнения каждого требования"}
+  ]
+}

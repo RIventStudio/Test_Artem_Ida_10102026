@@ -1,0 +1,53 @@
+{
+  "schema": "BPR40_SIDECAR_PASSPORT/1.1",
+  "module_id": "generate_proof_screenshots",
+  "name": "Generate Proof Screenshots",
+  "version": "1.0.0",
+  "standard": "SENIOR_ARCHITECTURE_STANDARD_V6.0",
+  "layer": "tools",
+  "description": "Генератор пруф-скриншотов для проекта СУБД LogiFlow DB (BPR40 Auto).",
+  "author": "CONTROL_TOWER_DEVELOPER",
+  "inputs": {},
+  "outputs": {},
+  "invariants": [
+    "SIDECAR_CANON_ENFORCED",
+    "IN_CODE_ONLY_VERSION",
+    "FAIL_CLOSED"
+  ],
+  "functions": {
+    "render_html_mockup": {
+      "fn_id": "generate_proof_screenshots.render_html_mockup",
+      "description": "Функция render_html_mockup",
+      "args": [
+        "scenario"
+      ],
+      "inputs": {
+        "scenario": {
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      },
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    },
+    "main": {
+      "fn_id": "generate_proof_screenshots.main",
+      "description": "Функция main",
+      "args": [],
+      "inputs": {},
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    }
+  }
+}

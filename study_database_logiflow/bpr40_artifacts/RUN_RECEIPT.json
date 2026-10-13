@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "run_id": "BPR40-RUN-20261010-SQL-EXCEL-DB-PROJECT",
+  "issued_at": "2026-10-13T07:06:00+03:00",
+  "receipt_status": "SEALED_DELIVERED",
+  "project_dir": "./Database_Project_BPR40",
+  "student": "Неменущий Артём Витальевич (@RIventStudio)",
+  "group": "ИСП курс 2 семестр 4",
+  "tag": "-Учёба",
+  "artifacts": {
+    "sql_script": "database_project.sql",
+    "excel_workbook": "database_project.xlsx",
+    "presentation_pdf": "Итоговая_Презентация_База_Данных_LogiFlow_DB.pdf",
+    "report_pdf": "Итоговый_Отчет_База_Данных_LogiFlow_DB.pdf",
+    "presentation_html": "presentation_database_project.html",
+    "screenshots_dir": "screenshots",
+    "screenshots_count": 10
+  },
+  "credentials": {
+    "excel_password": "4955",
+    "encryption_passphrase": "4955"
+  },
+  "verdict": "APPROVED"
+}

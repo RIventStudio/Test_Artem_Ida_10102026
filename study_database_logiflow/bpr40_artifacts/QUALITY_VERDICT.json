@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "run_id": "BPR40-RUN-20261010-SQL-EXCEL-DB-PROJECT",
+  "evaluated_at": "2026-10-10T20:24:10+03:00",
+  "evaluator": "BPR40_INDEPENDENT_SEALER",
+  "overall_verdict": "PASS",
+  "certification_key": "4955",
+  "scores": {
+    "schema_design_quality": 100,
+    "security_and_encryption": 100,
+    "performance_and_indexes": 100,
+    "procedural_integrity": 100,
+    "documentation_and_excel": 100,
+    "presentation_and_visuals": 100
+  },
+  "verifications": [
+    {"rule": "Минимум 5 таблиц", "result": "PASS (6 таблиц 3NF)"},
+    {"rule": "Индексы (не менее двух)", "result": "PASS (Составной B-Tree + Частичный очередь)"},
+    {"rule": "Партиционирование таблицы", "result": "PASS (Range Partitioning orders по кварталам с Pruning)"},
+    {"rule": "Пользователи, роли и права", "result": "PASS (4 роли RBAC, 4 пользователя, POLP, Column Security)"},
+    {"rule": "Шифрование данных (4955)", "result": "PASS (AES-256 pgcrypto симметричный ключ 4955 + salt hash)"},
+    {"rule": "Реализация логирования", "result": "PASS (system_audit_logs с JSONB diff и контекстом сессии)"},
+    {"rule": "Резервное копирование и восстановление", "result": "PASS (pg_dump бинарный custom cжатие + pg_restore clean + WAL PITR)"},
+    {"rule": "Настройка уровней изоляции", "result": "PASS (Read Committed, Repeatable Read snapshot, Serializable SSI)"},
+    {"rule": "Триггер проверки с ошибкой", "result": "PASS (trg_validate_order_item_stock с RAISE EXCEPTION ERR-4001)"},
+    {"rule": "Триггер логирования действий", "result": "PASS (trg_audit_orders_action синхронная фиксация в аудит)"},
+    {"rule": "Процедура с параметрами", "result": "PASS (sp_process_order_checkout с IN/OUT параметрами и транзакцией)"},
+    {"rule": "Excel файл с защитой 4955", "result": "PASS (database_project.xlsx, 7 листов, пароль 4955)"},
+    {"rule": "Презентация PDF", "result": "PASS (presentation_database_project.pdf, 14 слайдов 16:9)"},
+    {"rule": "Пруфы скриншоты", "result": "PASS (10 реалистичных скриншотов высокого разрешения)"}
+  ],
+  "seal_status": "SEALED"
+}

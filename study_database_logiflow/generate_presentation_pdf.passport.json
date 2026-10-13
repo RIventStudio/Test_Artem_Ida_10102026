@@ -1,0 +1,53 @@
+{
+  "schema": "BPR40_SIDECAR_PASSPORT/1.1",
+  "module_id": "generate_presentation_pdf",
+  "name": "Generate Presentation Pdf",
+  "version": "1.0.0",
+  "standard": "SENIOR_ARCHITECTURE_STANDARD_V6.0",
+  "layer": "tools",
+  "description": "Генератор итоговой PDF-презентации проекта базы данных 'LogiFlow DB'.",
+  "author": "CONTROL_TOWER_DEVELOPER",
+  "inputs": {},
+  "outputs": {},
+  "invariants": [
+    "SIDECAR_CANON_ENFORCED",
+    "IN_CODE_ONLY_VERSION",
+    "FAIL_CLOSED"
+  ],
+  "functions": {
+    "get_img_uri": {
+      "fn_id": "generate_presentation_pdf.get_img_uri",
+      "description": "Функция get_img_uri",
+      "args": [
+        "img_name"
+      ],
+      "inputs": {
+        "img_name": {
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      },
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    },
+    "generate_presentation": {
+      "fn_id": "generate_presentation_pdf.generate_presentation",
+      "description": "Функция generate_presentation",
+      "args": [],
+      "inputs": {},
+      "outputs": {
+        "return_type": "Any"
+      },
+      "invariants": [
+        "FAIL_CLOSED",
+        "DETERMINISTIC"
+      ]
+    }
+  }
+}
